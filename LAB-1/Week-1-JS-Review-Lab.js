@@ -496,7 +496,7 @@ const listing1 = {...listings[1], isSold: false, currentOwner: "Jane Doe"};
  * "This house at (address) is owned by (currentOwner)"
  */
 //WRITE YOUR CODE BELOW
-
+console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwner}`);
 /**
  * NOTE: THIS TASK IS TRICKY!
  * Task-4: Create a function to calculate the realtor fees.
