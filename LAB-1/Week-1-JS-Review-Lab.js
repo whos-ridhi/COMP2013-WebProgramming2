@@ -1,5 +1,8 @@
 //All the listings for the project as JS objects
 
+//LAB 1
+//Ridhi Bhandula
+
 const listings = [
   {
     id: "10100",
@@ -478,6 +481,7 @@ const listings = [
  */
 //WRITE YOUR CODE BELOW
 
+let listing0 = listings[0];
 /**
  * Task-2: create an object named listing1 using the spread operator and add 2 new properties,
  * isSold which is a boolean set to false,
