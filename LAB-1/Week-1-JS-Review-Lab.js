@@ -488,7 +488,7 @@ let listing0 = listings[0];
  * and currentOwner which is a string with the value of Jane Doe
  */
 //WRITE YOUR CODE BELOW
-
+const listing1 = {...listings[1], isSold: false, currentOwner: "Jane Doe"};
 /**
  * Task-3: print to console a text using template literals that contains the name of the owner,
  * and their current address for listing1.
