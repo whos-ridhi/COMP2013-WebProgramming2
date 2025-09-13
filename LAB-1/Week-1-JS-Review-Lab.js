@@ -522,8 +522,16 @@ let fees = console.log(`The House at ${listings[2].address} has a realor fees of
  */
 //WRITE YOUR CODE BELOW
 
+let listingAscendingly = listings.sort((a,b) => {
+  let PriceA = Number(a.price.replace("$", "").replace(",", ""));
+  let PriceB = Number(b.price.replace("$", "").replace(",", ""));
+  return PriceA - PriceB;
+});
+
+console.log(listingAscendingly);
 /**
  * Task-6: filter all the listings by bulitIn propertity for all houses built on or after 1990.
  * Name the variable newBuiltListings
  */
 //WRITE YOUR CODE BELOW
+
