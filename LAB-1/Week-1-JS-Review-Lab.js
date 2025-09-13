@@ -523,9 +523,9 @@ let fees = console.log(`The House at ${listings[2].address} has a realor fees of
 //WRITE YOUR CODE BELOW
 
 let listingAscendingly = listings.sort((a,b) => {
-  let PriceA = Number(a.price.replace("$", "").replace(",", ""));
-  let PriceB = Number(b.price.replace("$", "").replace(",", ""));
-  return PriceA - PriceB;
+  let priceA = Number(a.price.replace("$", "").replace(",", ""));
+  let priceB = Number(b.price.replace("$", "").replace(",", ""));
+  return priceA - priceB;
 });
 
 console.log(listingAscendingly);
@@ -535,3 +535,9 @@ console.log(listingAscendingly);
  */
 //WRITE YOUR CODE BELOW
 
+let newBuiltListings = listings.filter(listing => {
+  //builtIn is a string, convert it to a number
+  return Number(listing.propertySummary.builtIn) >= 1990;
+});
+
+console.log(newBuiltListings);
