@@ -511,7 +511,12 @@ console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwn
  * USE TERNARIES INSTEAD OF IF/ELSE STATEMENTS!
  */
 //WRITE YOUR CODE BELOW
+function realtorFees(listing){
+  let cost = Number(listing.price.replace("$", "").replace(",",""));
+  return "$" + (cost <= 450000 ? (cost * 0.025) : (cost * 0.02));
+};
 
+let fees = console.log(`The House at ${listings[2].address} has a realor fees of ${realtorFees(listings[2])}`);
 /**
  * Task-5: Sort the listing array ascendingly in a new variable called listingAscendingly
  */
